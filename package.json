@@ -1,0 +1,20 @@
+{
+  "name": "gen-ai-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "Frontend": "npm run dev --prefix Frontend",
+    "Backend": "npm start --prefix Backend",
+    "dev": "concurrently \"npm run Backend\" \"npm run Frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
